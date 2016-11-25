@@ -1,2 +1,2 @@
 # mini-vue
-A framework which imitated Vue.js
+Learn Vue.js by implement some basic features of it
