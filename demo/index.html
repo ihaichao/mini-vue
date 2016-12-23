@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="app">
+		<span v-text="name"></span>
+		<!--<span v-for="item in hobby" v-text="item"></span>-->
+		<span v-text="contact.email"></span>
+		<span v-text="contact.github"></span>
+	</div>
+
+	<script src="../src/index.js"></script>
+	<script>
+		window.data = {
+			name: 'zhangzongzheng',
+			hobby: ['fitness', 'football'],
+			contact: {
+				email: 'zzzhaichao@gmail.com',
+				github: 'https://github.com/ihaichao'
+			}
+		}
+		let app = new Vue({
+			el: '#app',
+			data: data
+		})
+	</script>
+</body>
+</html>
